@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Match-match game</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+      <div class="skirts">
+          <div class="menu-header">Skirt of the cards</div>
+          <ul id="shirts">
+              <li><img data-img="girl" src="img/girl.png" width="50" height="50" alt="skirt1"></li>
+              <li><img data-img="leopard" src="img/leopard.png" width="50" height="50" alt="skirt2"></li>
+              <li><img data-img="eagle" src="img/eagle.png" width="50" height="50" alt="skirt3"></li>
+          </ul>
+      </div>
+      <div class="difficulty">
+          <div class="menu-header">Game difficulty</div>
+          <ul id="level">
+              <li data-dif="5/2">Easy(5*2)</li>
+              <li data-dif="6/3">Normal(6*3)</li>
+              <li data-dif="8/3">Hard(8*3)</li>
+          </ul>
+      </div>
+      <input id="startButton" type="button" value="New Game" />
+      <main id="game">
+          <p>How to play:<br/></p>
+          <p>Put your memory to the test. Match the cards in as few moves as you can. Be sure to challenge yourself with a higher level if it's too easy.<br/>
+              When the game begins, all the pictures are hidden. <br/>
+              To play:<br/>
+          </p>
+          <ol>
+              <li>Turn over any two cards.</li>
+              <li>If the two cards match, they are going to disappear.</li>
+              <li>If they don't match, they are turning back over.</li>
+              <li>Remember what was on each card and where it was.</li>
+              <li>The game is over when all the cards have been matched.</li>
+          </ol>
+          
+          <form class="formdidntsend" id="form" action="#">
+          <div class="form">
+            <p>
+                <label>First name</label>
+                <input class="first-name" type="text" name="first_name" placeholder="First name" required>
+            </p>
+            <p>
+                <label>Last name</label>
+                <input class="last-name" type="text" name="last_name" placeholder="Last name" required>
+            </p>
+            <p>
+              <label>Email</label>
+              <input class="email" type="email" name="email" placeholder="email" required>
+            </p>
+            <p><button class="submit" type="submit">Send info</button></p>
+          </div>
+        </form>
+          <p class="submited" style="display: none">Thanks for submitting the form</p>
+
+          
+          <script src="js/myjs.js"></script>
+      </main>
+  </body>
+</html>
